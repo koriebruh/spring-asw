@@ -1,0 +1,42 @@
+### GET ORDER
+GET http://localhost:8081/orders
+Accept: application/json
+
+
+### CREATE NEW ORDER
+POST http://localhost:8081/orders
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 1,
+  "customerName": "Jane Doe",
+  "customerAddress": "456 Oak Street",
+  "products": [
+    {
+      "id": 1
+    }
+  ]
+}
+
+### GET ORDER BY ID
+GET http://localhost:8081/orders/1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer_address": "",
+  "customer_name": ""
+}
+
+
+### UPDATE ORDER BY ID
+PUT http://localhost:8081/orders/1
+Accept: application/json
+Content-Type: application/json
+
+
+### DELETE ORDER BY ID
+PUT http://localhost:8081/orders/1
+Accept: application/json
+

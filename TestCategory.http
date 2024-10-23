@@ -1,0 +1,37 @@
+### GET ALL CATEGORIES
+GET http://localhost:8081/categories
+Accept: application/json
+
+
+### CREATE NEW CATEGORIES
+POST http://localhost:8081/categories
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Electronics",
+  "description": "Electronic gadgets and devices"
+}
+
+
+### GET CATEGORIES BY ID
+GET http://localhost:8081/categories/1
+Accept: application/json
+
+
+
+### UPDATE CATEGORIES BY ID
+PUT http://localhost:8081/categories/2
+Accept: application/json
+Content-Type: application/json
+
+{
+  "description": "engineer tools",
+  "name": "tools"
+}
+
+
+### DELETE CATEGORIES BY ID
+PUT http://localhost:8081/categories/2
+Accept: application/json
+

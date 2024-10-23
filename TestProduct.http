@@ -1,0 +1,41 @@
+### GET ALL PRODUCT
+GET http://localhost:8081/products
+Accept: application/json
+
+### CREATE SOME PRODUCT
+POST http://localhost:8081/products
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Product ASS",
+  "price": 99.99,
+  "stock": 100,
+  "category": {
+    "id": 1
+  }
+}
+
+### GET PRODUCT BY ID
+GET http://localhost:8081/products/1
+Accept: application/json
+
+### UPDATE PRODUCT BY ID
+PUT http://localhost:8081/products/4
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Product ASS",
+  "price": 99.99,
+  "stock": 100,
+  "category": {
+    "id": 2
+  }
+}
+
+
+### MASIH ERROR BG
+### DELETE PRODUCT BY ID
+DELETE http://localhost:8081/products/1
+Accept: application/json
