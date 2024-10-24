@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/categories")
+@RequestMapping("/orders")
 public class OrderController {
 
     @Autowired

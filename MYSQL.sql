@@ -23,3 +23,7 @@ desc order_product;
 desc categories;
 
 CREATE DATABASE online_store_test;
+
+CREATE DATABASE IF NOT EXISTS online_store;
+
+SHOW TABLES FROM online_store;
